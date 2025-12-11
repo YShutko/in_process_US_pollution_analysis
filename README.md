@@ -9,7 +9,10 @@ Given the public health importance of air quality, this project has the potentia
 
 ## Project content
 1. Dataset from [Kaggle](https://www.kaggle.com/datasets/sogun3/uspollution)
-2. [Notebook](https://github.com/YShutko/US_pollution-_analysis/blob/faefa759121f8faf6deed4847dd77c73ba352c07/notebooks/etl_eda.ipynb)
+2. [Notebook](https://github.com/YShutko/in_process_US_pollution_analysis/blob/f307cbf9418356dbc8b87418cdff26b7d5df3198/notebooks/csv_to_parquet.ipynb) to save .csv dataset into .parquet
+3. [Notebook](https://github.com/YShutko/in_process_US_pollution_analysis/blob/f307cbf9418356dbc8b87418cdff26b7d5df3198/notebooks/coordinates_to%20_dataset.ipynb)to enrich dataset with coordinates
+4. [ETL Notebook](https://github.com/YShutko/US_pollution-_analysis/blob/faefa759121f8faf6deed4847dd77c73ba352c07/notebooks/etl_eda.ipynb) 
+5. [Data Visualization]()
 
 ## Data
 The dataset is too large to include directly. Parquet technic was used to convert data from csv and store it in dedicated repo on GitHub.

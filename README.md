@@ -30,6 +30,8 @@ US_pollution_analysis/
 │   ├── etl_eda.ipynb               # Step 3: ETL pipeline — cleaning, AQI calculation, unit conversion
 │   └── ml_modeling.ipynb           # Step 4: Machine learning — regression, classification, anomaly detection
 │
+├── reports/
+│   └── figures/                    # Saved plots and visualizations
 │
 ├── README.md
 └── requirements.txt
@@ -129,6 +131,23 @@ Implements four ML use-cases on the cleaned dataset:
 - **Machine Learning**: scikit-learn, XGBoost
 - **Storage**: Apache Parquet
 - **Environment**: Jupyter Notebook
+
+## Getting Started
+
+### Prerequisites
+
+```bash
+pip install pandas numpy pyarrow matplotlib seaborn plotly scikit-learn xgboost jupyter
+```
+
+### Running the Notebooks
+
+1. Download the [US Pollution dataset from Kaggle](https://www.kaggle.com/datasets/sogun3/uspollution) and place the CSV in `data/raw/`
+2. Run the notebooks **in order**:
+   ```
+   csv_to_parquet.ipynb → coordinates_to_dataset.ipynb → etl_eda.ipynb → ml_modeling.ipynb
+   ```
+3. Alternatively, if the cleaned Parquet file is already available, you can start directly from `etl_eda.ipynb` or `ml_modeling.ipynb`
 
 ## Future Work
 
